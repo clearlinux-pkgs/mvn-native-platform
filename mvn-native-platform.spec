@@ -4,7 +4,7 @@
 #
 Name     : mvn-native-platform
 Version  : 0.14
-Release  : 1
+Release  : 2
 URL      : https://github.com/adammurdoch/native-platform/archive/0.14.tar.gz
 Source0  : https://github.com/adammurdoch/native-platform/archive/0.14.tar.gz
 Source1  : https://repo.gradle.org/gradle/libs-releases/net/rubygrapefruit/native-platform-freebsd-amd64-libcpp/0.14/native-platform-freebsd-amd64-libcpp-0.14.jar
@@ -37,7 +37,6 @@ Source27  : https://repo.gradle.org/gradle/libs-releases/net/rubygrapefruit/nati
 Source28  : https://repo.gradle.org/gradle/libs-releases/net/rubygrapefruit/native-platform-windows-i386/0.14/native-platform-windows-i386-0.14.pom
 Source29  : https://repo.gradle.org/gradle/libs-releases/net/rubygrapefruit/native-platform/0.14/native-platform-0.14.jar
 Source30  : https://repo.gradle.org/gradle/libs-releases/net/rubygrapefruit/native-platform/0.14/native-platform-0.14.pom
-Source31  : https://repo.gradle.org/gradle/libs-releases/org/fusesource/jansi/jansi/1.14/jansi-1.14.jar
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -165,9 +164,6 @@ cp %{SOURCE29} %{buildroot}/usr/share/java/.m2/repository/net/rubygrapefruit/nat
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/rubygrapefruit/native-platform/0.14
 cp %{SOURCE30} %{buildroot}/usr/share/java/.m2/repository/net/rubygrapefruit/native-platform/0.14/native-platform-0.14.pom
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.14
-cp %{SOURCE31} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.14/jansi-1.14.jar
-
 
 %files
 %defattr(-,root,root,-)
@@ -204,7 +200,6 @@ cp %{SOURCE31} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/j
 /usr/share/java/.m2/repository/net/rubygrapefruit/native-platform-windows-i386/0.14/native-platform-windows-i386-0.14.pom
 /usr/share/java/.m2/repository/net/rubygrapefruit/native-platform/0.14/native-platform-0.14.jar
 /usr/share/java/.m2/repository/net/rubygrapefruit/native-platform/0.14/native-platform-0.14.pom
-/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.14/jansi-1.14.jar
 
 %files license
 %defattr(0644,root,root,0755)
