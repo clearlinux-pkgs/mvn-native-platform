@@ -4,7 +4,7 @@
 #
 Name     : mvn-native-platform
 Version  : 0.14
-Release  : 2
+Release  : 3
 URL      : https://github.com/adammurdoch/native-platform/archive/0.14.tar.gz
 Source0  : https://github.com/adammurdoch/native-platform/archive/0.14.tar.gz
 Source1  : https://repo.gradle.org/gradle/libs-releases/net/rubygrapefruit/native-platform-freebsd-amd64-libcpp/0.14/native-platform-freebsd-amd64-libcpp-0.14.jar
